@@ -37,6 +37,7 @@ brew install --cask bitcoin-core
 brew install --cask gpg-suite
 brew install --cask microsoft-remote-desktop
 
+brew install node
 brew install pyenv
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
