@@ -36,6 +36,7 @@ brew install --cask whatsapp
 brew install --cask bitcoin-core
 brew install --cask gpg-suite
 brew install --cask microsoft-remote-desktop
+brew install --cask vnc-viewer
 
 brew install node
 brew install pyenv
