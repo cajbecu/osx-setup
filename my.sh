@@ -60,3 +60,4 @@ brew install csvq
 brwe install black
 brew install ripgrep
 brew install socat
+brew install pnpm
