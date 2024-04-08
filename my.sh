@@ -62,3 +62,4 @@ brew install ripgrep
 brew install socat
 brew install pnpm
 brew install htop
+brew install jq
