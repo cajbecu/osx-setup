@@ -3,6 +3,7 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew install --cask microsoft-edge
+brew install --cask firefox
 brew install --cask adobe-acrobat-pro
 brew install --cask microsoft-word
 brew install --cask microsoft-excel
