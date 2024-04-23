@@ -38,6 +38,7 @@ brew install --cask bitcoin-core
 brew install --cask gpg-suite
 brew install --cask microsoft-remote-desktop
 brew install --cask vnc-viewer
+brew install --cask rightfont
 
 brew install node
 brew install pyenv
