@@ -65,5 +65,6 @@ brew install socat
 brew install pnpm
 brew install htop
 brew install jq
+brew install step
 
 npm install elasticdump -g
