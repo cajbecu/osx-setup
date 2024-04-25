@@ -66,5 +66,6 @@ brew install pnpm
 brew install htop
 brew install jq
 brew install step
+brew install mtr
 
 npm install elasticdump -g
