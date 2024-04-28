@@ -64,6 +64,7 @@ brew install ripgrep
 brew install socat
 brew install pnpm
 brew install htop
+brew install btop
 brew install jq
 brew install step
 brew install mtr
