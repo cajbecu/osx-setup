@@ -69,5 +69,6 @@ brew install jq
 brew install step
 brew install mtr
 brew install wget
+brew install b2-tools
 
 npm install elasticdump -g
