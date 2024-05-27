@@ -73,3 +73,4 @@ brew install wget
 brew install b2-tools
 
 npm install elasticdump -g
+npm install -g json2csv --save
