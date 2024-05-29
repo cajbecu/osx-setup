@@ -67,6 +67,7 @@ brew install pnpm
 brew install htop
 brew install btop
 brew install jq
+brew install yq
 brew install step
 brew install mtr
 brew install wget
