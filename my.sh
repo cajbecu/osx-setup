@@ -75,5 +75,7 @@ brew install b2-tools
 brew install kustomize
 brew install d2
 
+brew install cockroachdb/tap/cockroach
+
 npm install elasticdump -g
 npm install -g json2csv
