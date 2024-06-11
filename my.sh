@@ -73,6 +73,7 @@ brew install mtr
 brew install wget
 brew install b2-tools
 brew install kustomize
+brew install d2
 
 npm install elasticdump -g
 npm install -g json2csv
