@@ -74,6 +74,7 @@ brew install wget
 brew install b2-tools
 brew install kustomize
 brew install d2
+brew install coreutils
 
 brew install cockroachdb/tap/cockroach
 
