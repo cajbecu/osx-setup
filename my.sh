@@ -41,6 +41,7 @@ brew install --cask vnc-viewer
 brew install --cask rightfont
 brew install --cask wireshark
 brew install --cask spotify
+brew install --cask araxis-merge
 
 brew install node
 brew install pyenv
