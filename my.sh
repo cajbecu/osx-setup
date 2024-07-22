@@ -77,6 +77,7 @@ brew install b2-tools
 brew install kustomize
 brew install d2
 brew install coreutils
+brew install terraform
 
 brew install cockroachdb/tap/cockroach
 
