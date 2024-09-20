@@ -85,4 +85,4 @@ brew install terraform
 brew install cockroachdb/tap/cockroach
 
 npm install elasticdump -g
-npm install -g json2csv
+npm install -g @json2csv/cli
