@@ -31,7 +31,7 @@ brew install --cask raycast
 brew install --cask setapp
 brew install --cask transmission
 brew install --cask viscosity
-brew install --cask warp
+brew install --cask iterm2
 brew install --cask wifi-explorer-pro
 brew install --cask whatsapp
 brew install --cask bitcoin-core
