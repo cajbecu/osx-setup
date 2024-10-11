@@ -81,6 +81,7 @@ brew install kustomize
 brew install d2
 brew install coreutils
 brew install terraform
+brew install k9s
 
 brew install cockroachdb/tap/cockroach
 
