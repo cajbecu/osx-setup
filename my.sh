@@ -45,6 +45,7 @@ brew install --cask araxis-merge
 brew install --cask dadroit-json-viewer
 brew install --cask hex-fiend
 brew install --cask screaming-frog-seo-spider
+brew install --cask polypane
 
 brew install node
 brew install pyenv
