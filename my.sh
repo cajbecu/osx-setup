@@ -83,6 +83,7 @@ brew install d2
 brew install coreutils
 brew install terraform
 brew install k9s
+brew install duckdb
 
 brew install cockroachdb/tap/cockroach
 
