@@ -50,7 +50,7 @@ brew install --cask polypane
 brew install node
 
 brew install pyenv
-if grep -q "" ~/.zshrc; then
+if grep -q "PYENV_ROOT" ~/.zshrc; then
   echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
   echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
   echo 'eval "$(pyenv init -)"' >> ~/.zshrc
