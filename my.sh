@@ -48,10 +48,19 @@ brew install --cask screaming-frog-seo-spider
 brew install --cask polypane
 
 brew install node
+
 brew install pyenv
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+if grep -q "" ~/.zshrc; then
+  echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+  echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+  echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+fi
 
 brew install starship
+if grep -q "starship init zsh" ~/.zshrc; then
+  echo 'eval "$(starship init zsh)"' >> ~/.zshrc
+fi
+
 brew install mutt
 brew install kubectx
 brew install poetry
@@ -61,8 +70,6 @@ brew install zlib
 brew install libpng
 brew install xz
 brew install readline
-brew install mysql-client
-brew install percona-server
 brew install postgresql
 brew install git-crypt
 brew install csvq
@@ -89,3 +96,13 @@ brew install cockroachdb/tap/cockroach
 
 npm install elasticdump -g
 npm install -g @json2csv/cli
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+brew install mysql-client@8.0
+if grep -q "mysql-client@8.0" ~/.zshrc; then
+  echo 'export PATH="/opt/homebrew/opt/mysql-client@8.0/bin:$PATH"' >> ~/.zshrc
+  echo 'export LDFLAGS="-L/opt/homebrew/opt/mysql-client@8.0/lib"' >> ~/.zshrc
+  echo 'export CPPFLAGS="-I/opt/homebrew/opt/mysql-client@8.0/include"' >> ~/.zshrc
+  echo 'export PKG_CONFIG_PATH="/opt/homebrew/opt/mysql-client@8.0/lib/pkgconfig"' >> ~/.zshrc
+fi
