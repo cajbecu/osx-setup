@@ -21,10 +21,7 @@ brew install --cask tableau-prep
 brew install --cask http-toolkit
 brew install --cask lens
 brew install --cask mimestream
-
-# brew install --cask mysqlworkbench
-# https://downloads.mysql.com/archives/get/p/8/file/mysql-workbench-community-8.0.38-macos-arm64.dmg
-
+brew install --cask mysqlworkbench
 brew install --cask navicat-for-mysql
 brew install --cask navicat-premium
 brew install --cask orbstack
