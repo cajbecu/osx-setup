@@ -1,5 +1,9 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+if grep -q "brew shellenv" ~/.zprofile; then
+  echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> ~/.zprofile
+fi
+
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew install --cask microsoft-edge
@@ -12,7 +16,6 @@ brew install --cask google-drive
 brew install --cask zoom
 brew install --cask lastpass
 brew install --cask fellow
-brew install --cask sublime-text
 brew install --cask slack
 brew install --cask evernote
 brew install --cask jetbrains-toolbox
@@ -61,6 +64,11 @@ if grep -q "starship init zsh" ~/.zshrc; then
   echo 'eval "$(starship init zsh)"' >> ~/.zshrc
 fi
 
+brew install --cask sublime-text
+if grep -q "Sublime" ~/.zprofile'; then
+  echo 'export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"' >> ~/.zprofile
+fi
+
 brew install mutt
 brew install kubectx
 brew install poetry
@@ -105,4 +113,13 @@ if grep -q "mysql-client@8.0" ~/.zshrc; then
   echo 'export LDFLAGS="-L/opt/homebrew/opt/mysql-client@8.0/lib"' >> ~/.zshrc
   echo 'export CPPFLAGS="-I/opt/homebrew/opt/mysql-client@8.0/include"' >> ~/.zshrc
   echo 'export PKG_CONFIG_PATH="/opt/homebrew/opt/mysql-client@8.0/lib/pkgconfig"' >> ~/.zshrc
+fi
+
+brew install kubecolor
+if grep -q "kubecolor" ~/.zshrc; then
+  echo 'alias kubectl=kubecolor' >> ~/.zshrc
+fi
+
+if grep -q "GPG_TTY" ~/.zshrc; then
+  echo 'export GPG_TTY=$(tty)' >> ~/.zshrc
 fi
