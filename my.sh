@@ -100,6 +100,8 @@ brew install terraform
 brew install k9s
 brew install duckdb
 brew install openjdk@17
+brew install golang
+brew install binaryen
 
 brew install cockroachdb/tap/cockroach
 
