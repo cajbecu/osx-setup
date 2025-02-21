@@ -102,6 +102,8 @@ brew install duckdb
 brew install openjdk@17
 brew install golang
 brew install binaryen
+brew install redis
+brew install elixir
 
 brew install cockroachdb/tap/cockroach
 
