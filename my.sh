@@ -103,8 +103,11 @@ brew install openjdk@17
 brew install golang
 brew install binaryen
 brew install redis
-brew install elixir
 brew install oven-sh/bun/bun
+
+brew install elixir
+brew tap gigalixir/brew
+brew install gigalixir
 
 brew install cockroachdb/tap/cockroach
 
