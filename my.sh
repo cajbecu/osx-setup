@@ -49,6 +49,7 @@ brew install --cask dadroit-json-viewer
 brew install --cask hex-fiend
 brew install --cask screaming-frog-seo-spider
 brew install --cask polypane
+brew install --cask brave-browser
 
 brew install node
 
