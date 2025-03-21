@@ -106,6 +106,7 @@ brew install binaryen
 brew install redis
 brew install oven-sh/bun/bun
 brew install cilium-cli
+brew install cfssl
 
 brew install elixir
 brew tap gigalixir/brew
