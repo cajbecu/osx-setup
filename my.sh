@@ -107,6 +107,8 @@ brew install redis
 brew install oven-sh/bun/bun
 brew install cilium-cli
 brew install cfssl
+brew install just
+brew install chromium --no-quarantine
 
 brew install elixir
 brew tap gigalixir/brew
