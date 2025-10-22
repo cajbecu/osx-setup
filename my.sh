@@ -83,7 +83,7 @@ brew install postgresql
 brew install git-crypt
 brew install csvq
 brwe install black
-brew install ripgrep
+brew install ripgrep fzf bat
 brew install socat
 brew install pnpm
 brew install htop
@@ -122,7 +122,7 @@ npm install -g @json2csv/cli
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 brew install mysql-client@8.0
-if grep -q "mysql-client@8.0" ~/.zshrc; then
+if ! grep -q "mysql-client@8.0" ~/.zshrc; then
   echo 'export PATH="/opt/homebrew/opt/mysql-client@8.0/bin:$PATH"' >> ~/.zshrc
   echo 'export LDFLAGS="-L/opt/homebrew/opt/mysql-client@8.0/lib"' >> ~/.zshrc
   echo 'export CPPFLAGS="-I/opt/homebrew/opt/mysql-client@8.0/include"' >> ~/.zshrc
@@ -130,10 +130,21 @@ if grep -q "mysql-client@8.0" ~/.zshrc; then
 fi
 
 brew install kubecolor
-if grep -q "kubecolor" ~/.zshrc; then
+if ! grep -q "kubecolor" ~/.zshrc; then
   echo 'alias kubectl=kubecolor' >> ~/.zshrc
 fi
 
-if grep -q "GPG_TTY" ~/.zshrc; then
+if ! grep -q "GPG_TTY" ~/.zshrc; then
   echo 'export GPG_TTY=$(tty)' >> ~/.zshrc
+fi
+
+if ! grep -q "search()" ~/.zshrc; then
+  cat <<'EOF' >> ~/.zshrc
+
+search() {
+  rg --color=always --line-number "" | \
+    fzf --ansi --delimiter : \
+        --preview 'bat --color=always --style=numbers --highlight-line {2} {1}'
+}
+EOF
 fi
