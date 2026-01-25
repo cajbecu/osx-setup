@@ -121,6 +121,11 @@ npm install -g @json2csv/cli
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
+curl -fsSL https://claude.ai/install.sh | bash
+claude mcp add chrome-devtools --scope user npx chrome-devtools-mcp@latest
+claude mcp add playwright --scope user npx '@playwright/mcp@latest'
+
+
 brew install mysql-client@8.0
 if ! grep -q "mysql-client@8.0" ~/.zshrc; then
   echo 'export PATH="/opt/homebrew/opt/mysql-client@8.0/bin:$PATH"' >> ~/.zshrc
