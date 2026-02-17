@@ -12,6 +12,7 @@ brew install --cask adobe-acrobat-pro
 brew install --cask microsoft-word
 brew install --cask microsoft-excel
 brew install --cask microsoft-teams
+brew install --cask microsoft-outlook
 brew install --cask google-drive
 brew install --cask zoom
 brew install --cask lastpass
