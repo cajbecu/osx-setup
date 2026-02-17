@@ -52,7 +52,6 @@ brew install --cask screaming-frog-seo-spider
 brew install --cask polypane
 brew install --cask brave-browser
 brew install --cask keepingyouawake
-brew install --cask karabiner-elements
 
 brew install node
 
