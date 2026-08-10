@@ -112,6 +112,7 @@ brew install cilium-cli
 brew install cfssl
 brew install just
 brew install chromium --no-quarantine
+brew install ncdu
 
 brew install elixir
 brew tap gigalixir/brew
