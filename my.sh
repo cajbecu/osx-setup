@@ -26,7 +26,6 @@ brew install --cask http-toolkit
 brew install --cask lens
 brew install --cask mimestream
 brew install --cask mysqlworkbench
-brew install --cask navicat-for-mysql
 brew install --cask navicat-premium
 brew install --cask orbstack
 brew install --cask plex-media-server
@@ -49,10 +48,10 @@ brew install --cask araxis-merge
 brew install --cask dadroit-json-viewer
 brew install --cask hex-fiend
 brew install --cask screaming-frog-seo-spider
-brew install --cask polypane
 brew install --cask brave-browser
 brew install --cask keepingyouawake
 brew install --cask qlmarkdown
+brew install --cask simion/termic/termic
 
 brew install node
 
@@ -73,8 +72,10 @@ if grep -q "Sublime" ~/.zprofile'; then
   echo 'export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"' >> ~/.zprofile
 fi
 
-brew install mutt
+brew install k9s
 brew install kubectx
+
+brew install mutt
 brew install poetry
 brew install openssl
 brwe install sqlite
@@ -82,7 +83,6 @@ brew install zlib
 brew install libpng
 brew install xz
 brew install readline
-brew install postgresql
 brew install git-crypt
 brew install csvq
 brwe install black
@@ -101,24 +101,28 @@ brew install kustomize
 brew install d2
 brew install coreutils
 brew install terraform
-brew install k9s
-brew install duckdb
 brew install openjdk@17
-brew install golang
 brew install binaryen
-brew install redis
 brew install oven-sh/bun/bun
 brew install cilium-cli
 brew install cfssl
 brew install just
-brew install chromium --no-quarantine
 brew install ncdu
+brew install gh
+brew install avivsinai/tap/bitbucket-cli
+
+brew install chromium --no-quarantine
+
+brew install golang
 
 brew install elixir
 brew tap gigalixir/brew
 brew install gigalixir
 
+brew install duckdb
+brew install postgresql
 brew install cockroachdb/tap/cockroach
+brew install redis
 
 npm install elasticdump -g
 npm install -g @json2csv/cli
