@@ -3,7 +3,7 @@
 # Read Claude Code's session data from stdin
 input=$(cat)
 
-echo "$input" > ~/.claude/status.log
+echo "$input" > /Users/cajbecu/.claude/status.log
 
 # Extract values via jq
 model=$(echo "$input"        | jq -r '.model.display_name // "Claude"')
