@@ -1,0 +1,97 @@
+format = """
+$os\
+$directory\
+$kubernetes\
+$vcsh\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$hg_branch\
+$docker_context\
+$package\
+$c\
+$cmake\
+$cobol\
+$daml\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$golang\
+$guix_shell\
+$haskell\
+$haxe\
+$helm\
+$java\
+$julia\
+$kotlin\
+$lua\
+$nim\
+$nodejs\
+$ocaml\
+$opa\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$python\
+$raku\
+$rlang\
+$red\
+$ruby\
+$rust\
+$scala\
+$swift\
+$terraform\
+$vlang\
+$vagrant\
+$zig\
+$buf\
+$nix_shell\
+$conda\
+$meson\
+$spack\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$azure\
+$env_var\
+$crystal\
+$custom\
+$sudo\
+$cmd_duration\
+$line_break\
+$jobs\
+$battery\
+$time\
+$status\
+$container\
+$shell\
+$character"""
+
+
+scan_timeout = 10
+
+add_newline = false
+command_timeout = 2000
+
+[directory]
+truncate_to_repo = false
+truncation_length = 100
+
+[kubernetes]
+format = '[☸](red)[ $context \($namespace\)](red) '
+disabled = false
+style = 'cyan bold'
+
+[os]
+disabled = false
+
+[os.symbols]
+Macos = " "
+
